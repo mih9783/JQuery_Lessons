@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery Lessons</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div id="header" class="main" style="text-align: center;">
+
+            <h1>Header</h1>
+
+        </div>
+        <div id="text">
+            <p>Content</p>
+            <p> Test </p>
+        </div>
+        <div id="content">
+            <p>Content</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis jquery necessitatibus sed non, nobis
+                vel voluptate.
+            </p>
+            <p class="text-content"> Test </p>
+            <p>Content выборка следующего элемента</p>
+
+            <div>
+
+                <img src="" alt="Изучаем jQuery. Выбор элемента по тегу"><br>
+                <img src="" alt="Изучаем jQuery. Выбо элемета по id"><br>
+                <img src="" alt="Изучаем jQuery. Выбор элемекнта по class"><br>
+                <img src="" alt="web программирование">
+
+            </div>
+
+        </div>
+
+
+
+        <div id="sidebar">
+
+            <span>Sidebar</span>
+
+            <form action="">
+                Имя:<br>
+                <input type="text" name="firstname"><br>
+                Фамилия:<br>
+                <input name="lastname">
+            </form>
+
+            <div>
+                <a href="#">Это просто ссылка</a><br><br>
+                <a href="http:....">Эту ссылку выведем в консоль</a>
+            </div><br><br>
+
+
+            <a href="#" rel="nofollow">Эту ссылку тоже выведем в консоль</a><br><br>
+            <a href="#" rel="nofollow">Эти ссылки тоже выведем в консоль</a><br><br>
+            <a href="#" rel="nofollow">Эти ссылки тоже выведем в консоль</a><br><br>
+            <!-- Будет выбран этот элемент, т.к. он является элементом a и имеет атрибут rel со значением nofollow. -->
+            <a href="example.html" rel="nofollow next">Эта ссылка выбрана не будет</a>
+            <!-- Этот элемент выбран не будет, т.к. значение его атрибута rel не равно nofollow, а содержит 2 значения nofollow и next. -->
+
+            <div id="clear"> </div>
+        </div>
+        <div id="footer">
+            Footer
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- подключение через CDN -->
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+    <!-- <script src="http://yandex.st/jquery/1.9.1/jquery.min.js"></script> -->
+    <!-- <script src="js/jquery-1.9.1.min.js"></script> -->
+    <script src="js/functions.js"></script>
+</body>
+
+
+
+</html>

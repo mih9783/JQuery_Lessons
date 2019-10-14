@@ -1,0 +1,44 @@
+html, body{
+    padding:0;
+    margin:0;
+    height:100%;
+    position:relative;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+}
+/* Header */
+
+#header {
+    background-color: red;
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Content */
+
+#wrapper{
+    background:#CCC;
+    min-height:100%;
+    margin: 0 auto;
+    width: 95%;
+}
+#content, #text{
+    float: left;
+    width: 70%;
+}
+#clear{
+    clear: both;
+    height: 50px;
+}
+
+/* Footer */
+
+#footer{
+    background:#36F;
+    height:50px;
+    margin: 0 auto;
+    width: 100%;
+    margin-top:-50px;
+    position:relative;
+}
