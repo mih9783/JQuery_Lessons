@@ -178,10 +178,39 @@
             </p>
 
             <form>
-                <input name="id">class = "inp" <br>
+                <input name="id"> <br>
                 <input name="email" disabled="disabled">
             </form>
             <br><br>
+
+            <h2>21. Фильтр неактивных элементов</h2>
+            <p>
+                Противоположный фильтр предыдущему disabled, который выбирает отключенные элементы формы. <br>
+                <span>$(".class :disabled");</span>
+            </p>
+
+            <h2>22. Фильтр button</h2>
+            <p>
+                Используется для выбора элементов с тегом button или типом button. Например, нам необходимо выбрать все
+                button в форме с классом class:
+            </p>
+            <p>
+                Для увеличения производительности запроса в современных браузерах, используйте следующую конструкцию:
+                <span>$("селектор").filter(":button");</span>
+            </p>
+
+            <input type="button" value="Введите имя">
+            <!--Этот элемент не будет выбран, т.к. он не расположен в элементе form-->
+            <br>
+            <form class="form">
+                
+                <input type="button" value="Введите значение"><br>
+                <!--Этот элемент будет выбран, т.к. он расположен в элементе form и является элементом с type="button"-->
+                <button>Обновить данные</button><br>
+                <!--Этот элемент будет выбран, т.к. он расположен в элементе form и является элементом button-->
+                <input type="name"><br>
+                <!--Этот элемент не будет выбран, т.к. он не является элементом button и не является элементом с type="button"-->
+            </form>
 
         </div>
 
@@ -234,6 +263,16 @@
             <div> </div>
             <div></div>
             <div> </div>
+
+            <h2>23. Фильтр reset</h2>
+
+            <form class="myForm">
+                <input type="reset" value="Сбросить"><br>
+                <button type="submit" > button </button> <br>
+                <input type="checkbox" /><br>
+                <input type="password" /><br>
+                <input type="radio" />
+              </form>
 
         </div>
         <div id="clear"> </div>

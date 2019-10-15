@@ -83,7 +83,19 @@ body {
 }
 
 .focused {
-	background-color: #ff65ff;
+    background-color: #ff65ff;
+}
+
+.myForm button,
+input {
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.myForm textarea {
+    height: 45px;
 }
 
 

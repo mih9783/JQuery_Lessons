@@ -93,12 +93,94 @@ $(function () {
 
     // 19. Выбор не пустого элемента
     console.log($(".item:parent"));
-    
+
     // 20. Фильтр активных элементов формы
     //$(".class :enabled");
     //$("input:enabled");
     $("input:enabled").css("background-color", "yellow");
     console.log($("input:enabled"));
 
+    // 21. Фильтр неактивных элементов
+    $("input:disabled").css("background-color", "red");
+
+    // 22. Фильтр button
+    /*
+
+    ля увеличения производительности запроса в современных браузерах, используйте следующую конструкцию: $("селектор").filter(":button");
+
+    */
+
+    $("form :button");
+    //или с помощью метода filter
+    $("form *").filter(":button");
+    $("form *").filter(":button").css("background-color", "green");
+    console.log($("form *").filter(":button"));
+
+    // 23. Фильтр reset
+    /*
+ 
+     Если необходимо выбрать элемент, который сбрасывает введенные данные в форму используется фильтр reset
+ 
+    */
+    $("input:reset");
+    $("input:reset").css("border", "2px red solid");
+
+    // 24. Фильтр submit
+    // Для выделения кнопок, отправляющих данные формы на сервер используется фильтр submit.
+    $('.class :submit');
+    // Данный код выделит все кнопки отправляющие данные формы с классом class на сервер.
+
+    // 25. Фильтр radio
+    $("input:radio");
+
+    // 26. Фильтр checkbbox
+    $("input:checkbox");
+    //или с помощью селектора атрибута
+    $('input[type="checkbox"]');
+
+    // 27. Фильтр text
+    $("input:text");
+    $("[type=text]");
+
+    // 28. Фильтр password
+    $("*:password");
+    // или для современных браузеров
+    $('[type="password"]');
+
+    // 29. Фильтр file
+    $("input:file");
+    // для современных браузеров
+    $('input[type="file"]');
+
+    // 30. Фильтр input
+    // :input - выбирает все элементы input, textarea, select и button в документе. Т.е. он выбирает все элементы управления формы.
+    // $("селектор").filter(":input");
+    $("*:input");
+    //
+    $("form *").filter(":input");
+
+
+    // 31. Фильтр selected
+    $("селектор").filter(":selected");
+    $(":selected");
+    //
+    $("*").filter(":selected");
+
+
+    // 32. Фильтр checked
+    // Фильтр checked служит для выделения всех выбранных элементов из элемета типа checkbox.
+
+
+    // 33. Фильтр image
+    $("input:image");
+    // для современных браузеров
+    $('input[type="image"]');
+
+    // 34. Фильтр расположения элемента определенным образом в родительском элементе
+    $('div:nth-child(3)');
+    // Вернет все div, которые являются третьими по счету в родительских элементах
+
+    $('div:nth-child(odd)');
+    // Вернет все div, которые находятся на нечетных позициях в родительском элементе
 });
 
