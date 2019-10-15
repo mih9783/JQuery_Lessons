@@ -16,10 +16,12 @@
 
             <h1>Header</h1>
 
+
+
         </div>
-        
+
         <div id="content">
-            
+
             <table id="example">
 
                 <tr>
@@ -74,34 +76,174 @@
                     </p>
                 </div>
                 <div class="filter-elem">
-                        <p>
-                            8 пункт (последний элемент) um dolor sit amet consectetur adipisicing elit. Dignissimos!
-                        </p>
-                    </div>
+                    <p>
+                        8 пункт (последний элемент) um dolor sit amet consectetur adipisicing elit. Dignissimos!
+                    </p>
+                </div>
             </div>
+
+            <input type="text">
+            <input type="text">
+            <br>
+            <input type="text">
+            <input type="text">
+
+            <h2>13. Выбор элемента по номеру в выборке</h2>
+
+            <ul class="test">
+                <li class="primo">
+                    <a href="#" class="test__link">test item link</a>
+                </li>
+                <li class="secondo">
+                    <a href="#" class="test__link">test item link</a>
+                </li>
+                <li class="tetro">
+                    <a href="#" class="test__link">test item link</a>
+                </li>
+                <li class="quattro">
+                    <a href="#" class="test__link">test item link</a>
+                </li>
+                <li class="cinque">
+                    <a href="#" class="test__link">test item link</a>
+                </li>
+                <li class="sei">
+                    <a href="#" class="test__link">test item link</a>
+                </li>
+                <li class="sedici">
+                    <a href="#" class="test__link">test item link</a>
+                </li>
+                <li class="ten">
+                    <a href="#" class="test__link">test item link</a>
+                </li>
+            </ul>
+
+            <h2>14. Выбор элементов с номера больше заданного</h2>
+            <p>
+                Для тог, чтобы из выборки получить элементы с порядковым номером больше заданного используют фильтр
+                gt(n), n — порядковый номер. Например, мы хотим получить все элементы из элемента с классом class, кроме
+                первых 5:
+            </p>
+            <ul>Список элементов
+                <li class="class">в этом списке элемент №1</li>
+                <li class="class">в этом списке элемент №2</li>
+                <li class="class">в этом списке элемент №3</li>
+                <li class="class">в этом списке элемент №4</li>
+                <li class="class">в этом списке элемент №5</li>
+                <li class="class">в этом списке элемент №6</li>
+                <li class="class">в этом списке элемент №7</li>
+                <li class="class">в этом списке элемент №8</li>
+                <li class="class">в этом списке элемент №9</li>
+            </ul>
+
+            <h2>15. Выбор элементов с номером меньше заданного</h2>
+
+
+            <ul>Список элементов
+                <li class="list">в этом списке элемент №1</li>
+                <li class="list">в этом списке элемент №2</li>
+                <li class="list">в этом списке элемент №3</li>
+                <li class="list">в этом списке элемент №4</li>
+                <li class="list">в этом списке элемент №5</li>
+                <li class="list">в этом списке элемент №6</li>
+                <li class="list">в этом списке элемент №7</li>
+                <li class="list">в этом списке элемент №8</li>
+                <li class="list">в этом списке элемент №9</li>
+            </ul>
+
+            <h2>19. Выбор не пустого элемента</h2>
+            <p>
+                Внимание, если элемент содержит пробел, то он является не пустым. Например, нам надо выбрать все не
+                пустые div: <br>
+                <span>$("div:parent");</span>
+            </p>
+            <ul>
+                <li class="item">первый</liс>
+                <li class="item"></li>
+                <li class="item">третьий</li>
+                <li class="item">четвёртый</li>
+                <li class="item">пятый</li>
+            </ul>
+
+            <h2>20. Фильтр активных элементов формы</h2>
+
+            <p>
+                Селектор :enabled можно использовать только для выбора HTML-элементов, которые поддерживают атрибут
+                disabled: button, input, optgroup, option, select, и textarea.
+            </p>
+
+            <p>
+                Если необходимо выбрать активные элементы формы, то применяется фильтр enabled. Например, нам необходимо
+                выбрать все активные элементы из формы с классом class: <br>
+                <span>$(".class :enabled");</span>
+            </p>
+
+            <form>
+                <input name="id">class = "inp" <br>
+                <input name="email" disabled="disabled">
+            </form>
+            <br><br>
+
         </div>
 
 
 
         <div id="sidebar">
 
-            <span>Sidebar</span>
+            <span>Sidebar</span><br><br>
 
-            
+            <button>Button</button>
 
-            <div id="clear"> </div>
+            <div class="div_10 div-hidden"></div>
+            <div class="div_10"></div>
+            <div class="div_10 div-hidden"></div>
+
+            <p>
+                В этом примере при нажатии на кнопку мы запускаем функцию, которая с использованием селектора :visible
+                выбирает все видимые (занимают место в документе) элементы div и стилизует их.
+            </p>
+
+            <button>Button</button>
+
+            <div class="div_11 div-opasity"></div>
+            <div class="div_11 display-none"></div>
+            <div class="div_11"></div>
+            <div class="div_11 display-none"></div>
+            <div class="div_11 div-visib"></div>
+
+            <h2 class="title">16. Выбор элементов, которые являются заголовками (h1, h2 …)</h2>
+            <p>
+                Если нам необходимо выбрать из выборки элементы, которые являются заголовками, то применяется фильтр
+                header. Например мы хотим получить элементы класса title, которые являются заголовками: <br>
+                <span>$(".title:header");</span>
+            </p>
+
+            <h1 class="title">Заголовок h1</h1>
+            <h2 class="title">Заголовок h2</h2>
+
+            <h2>17. Выбор элементов, которые участвуют в анимации</h2>
+
+            <p>
+                Если необходимо выбрать элементы, которые на данный момент участвуют в анимации, то применяется фильтр
+                animated. Например, нам необходимо выбрать элементы с классом class, которые на данный момент участвуют
+                в анимации:
+            </p>
+
+            <h2>18. Выбор пустых элементов</h2>
+            <p><span>$("div:empty");</span></p>
+
+            <div> </div>
+            <div></div>
+            <div> </div>
+
         </div>
+        <div id="clear"> </div>
         <div id="footer">
             Footer
         </div>
     </div>
 
-        <script src="js/jquery-3.4.1.min.js"></script>
-        <!-- подключение через CDN -->
-        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
-        <!-- <script src="http://yandex.st/jquery/1.9.1/jquery.min.js"></script> -->
-        <!-- <script src="js/jquery-1.9.1.min.js"></script> -->
-        <script src="js/functions.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/functions.js"></script>
 </body>
 
 
