@@ -1,0 +1,174 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    color: green;
+}
+
+ol {
+    font-size: 1.6rem;
+    color: blue;
+    margin: 3rem;
+}
+
+ol li {
+    margin: 2rem;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+/* Header */
+
+#header {
+    background-color: rgb(231, 86, 86);
+    min-height: 100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Content */
+
+#wrapper {
+    background: #CCC;
+    min-height: 100%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#content {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    min-height: 100%;
+}
+
+span {
+    font-size: 1.3rem;
+    color: red;
+}
+
+#example,
+#example-1,
+#example-2 {
+    padding: 0.5rem;
+    width: 100%;
+    height: auto;
+    background-color: rgb(231, 86, 86);
+}
+
+#example-2 {
+    display: none;
+}
+
+#exm-out {
+    margin: 2rem;
+}
+
+.example-3 {
+    width: 100%;
+    height: 2rem;
+    background-color: rgb(231, 86, 86);
+    margin: 0.3rem auto;
+}
+
+.container,
+.container-1,
+.container-2 {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    padding-top: 1.5rem;
+    margin: 2rem auto;
+    background-color: rgb(172, 241, 241);
+}
+
+.container-3 {
+    box-sizing: border-box;
+    width: 100%;
+    height: 10rem;
+    padding-top: 1.5rem;
+    margin: 2rem auto;
+    background-color: rgb(172, 241, 241);
+}
+
+.container-4 {
+    box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+    padding: 25px;
+    margin: 2rem auto;
+    background-color: rgb(172, 241, 241);
+}
+
+.container-5 {
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    padding: 25px;
+    margin: 2rem auto;
+    background-color: rgb(172, 241, 241);
+}
+
+.container-6 {
+    box-sizing: border-box;
+    width: 100%;
+    height: 600px;
+    padding: 25px;
+    margin: 2rem auto;
+    background-color: rgb(172, 241, 241);
+}
+
+.fadeOut,
+.fadeto {
+    display: inline-block;
+    /* блочно-строчные элементы (выстраиваем элементы в линейку) */
+    width: 75px;
+    /* ширина элемента */
+    height: 150px;
+    /* высота элемента */
+    margin-right: 20px;
+    /* внешний отступ справа */
+    background-color: rgb(231, 86, 86);
+    /* цвет заднего фона */
+}
+
+.fadeToggle,
+.slideup,
+.slideup-1,
+.slidetogle,
+.slidetogle-1 {
+    display: inline-block;
+    /* блочно-строчные элементы (выстраиваем элементы в линейку) */
+    width: 75px;
+    /* ширина элемента */
+    height: 150px;
+    /* высота элемента */
+    margin-right: 20px;
+    /* внешний отступ справа */
+    background-color: rgb(231, 86, 86);
+    /* цвет заднего фона */
+}
+
+/* Footer */
+
+#footer {
+    background: #36F;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 30px;
+}
