@@ -1,0 +1,51 @@
+html, body{
+    padding:0;
+    margin:0;
+    height:100%;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing: border-box;
+}
+/* Header */
+
+#header {
+    background-color: red;
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 1.3rem;
+}
+
+#header h1 {
+    margin: 0 auto;
+}
+
+/* Content */
+
+#wrapper{
+    background:#CCC;
+    min-height:100%;
+    margin: 0 auto;
+    min-width: 100%;
+}
+#content {
+    min-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+/* Footer */
+
+#footer{
+    background:#36F;
+    min-height:50px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
