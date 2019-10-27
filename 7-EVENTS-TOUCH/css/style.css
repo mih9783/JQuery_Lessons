@@ -11,42 +11,51 @@ body {
     box-sizing: border-box;
 }
 
+#wrapper {
+    width: 100%;
+    min-height: 100%;
+    padding: 4rem;
+    margin: 0;
+}
+
 /* Header */
 
 #header {
-    background-color: red;
-    height: 100px;
     width: 100%;
-    margin: 0 auto;
-    padding-top: 1.3rem;
-}
-
-#header h1,
-h2,
-h3 {
-    margin: 0 auto;
-}
-
-/* Content */
-
-#wrapper {
-    background: rgb(219, 218, 218);
-    min-height: 100%;
-    margin: 0 auto;
-    min-width: 100%;
-}
-
-#content {
-    min-width: 100%;
-    margin: 0 auto;
     text-align: center;
-    font-size: 1.2rem;
-    padding-bottom: 3rem;
+    min-height: 100px;
+    background-color: red;
+    padding-top: 1rem;
+    color: #fff;
+}
+
+/* Main */
+
+.main {
+    min-height: 423px;
+    width: 100%;
+    background-color: rgb(204, 234, 241);
+    padding: 1rem;
+    text-align: center;
+}
+
+.content {
+    width: 90%;
+    border: 1px solid #000;
+    min-height: 270px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 .mylist {
     text-align: left;
-    padding-left: 2rem;
+    padding-left: 4rem;
+}
+
+.subtitle {
+    font-size: 2.2rem;
+    text-align: center;
+    color: brown;
 }
 
 .mylist li {
@@ -63,95 +72,10 @@ h3 {
     color: red;
 }
 
-.examples h2 {
-    color: green;
-    margin: 3rem;
-
-}
-
-.examples .subtitle {
-    font-size: 2.2rem;
-    text-align: center;
-    color: brown;
-}
-
-.div_1 {
-    height: 300px;
-    padding: 0;
-    box-sizing: border-box;
-    margin: 3rem;
-    border: 1px solid #000;
-}
-
-.div_2 {
-    height: 450px;
-    padding: 0;
-    box-sizing: border-box;
-    margin: 3rem;
-    border: 1px solid #000;
-}
-
-.exmpl,
-.exmpl_1,
-.exmpl_2,
-.exmpl_3,
-.exmpl_4 {
-    border: 2px solid rgb(112, 23, 23);
-    padding: 3rem;
-    margin: 3rem;
-    font-size: 1.7rem;
-    color: #fff;
-}
-
-.examples_para {
-    padding: 2rem;
-}
-
-.examples_para h2 {
-    text-align: center;
-}
-
-.examples_para .paragraph {
-    color: red;
-    font-size: 1.6rem;
-
-}
-
-#target {
-    font-size: 1.4rem;
-    padding: 0.3rem 1rem;
-    border-radius: 0.5rem;
-    color: red;
-    margin: 2rem auto;
-    outline: none;
-    border-color: red;
-    cursor: pointer;
-    width: 800px;
-}
-
-.scroll {
-    overflow: scroll;
-    width: 300px;
-    height: 450px;
-    margin: 3rem auto;
-    border: 1px solid #000;
-}
-
-
-
-
 /* Footer */
 
 #footer {
-    background: #36F;
-    min-height: 50px;
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
-    font-size: 2rem;
+    background-color: blue;
     padding: 1rem;
-}
-
-#footer h3 {
-    margin: 0;
+    color: #fff;
 }
