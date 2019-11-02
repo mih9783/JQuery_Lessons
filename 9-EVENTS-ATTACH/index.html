@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Присоединяемые события</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div id="header" class="main" style="text-align: center;">
+
+            <h1>Header</h1>
+        </div>
+
+        <div id="content">
+            <h1>События в JQUERY</h1>
+
+            <div class="mylist">
+                <ul>
+                    <h2 class="subtitle">Присоединяемые события</h2>
+
+                    <li> <span class="paragraph">$.proxy()</span> — Метод jQuery.proxy() принимает функцию и возвращает
+                        новую, которая всегда будет иметь определенный контекст выполнения.
+                        <p>
+                            Этот метод наиболее полезен для присоединения обработчиков событий к элементу, контекст
+                            которого указывает на другой объект. Если вы привязываете функцию, возвращенную из метода
+                            $.proxy(), jQuery все равно отменит правильную функцию, если передан оригинал.
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+
+            <h2>Примеры</h2>
+            <hr>
+            <hr>
+
+            <h2>$.proxy()</h2>
+
+            <div class="examples_para">
+
+                <li>
+                    <span class="paragraph">$.proxy()</span> — Имейте в виду, что система привязки событий jQuery
+                    присваивает уникальный идентификатор каждой функции обработки событий, чтобы отслеживать ее, когда
+                    она используется для указания функции, которая должна быть отключена. Функция, представленная
+                    $.proxy(), рассматривается как одна функция системой событий, даже если она используется для
+                    привязки разных контекстов. Чтобы избежать отключения не тех обработчиков, используйте уникальное
+                    пространство имен событий для привязки и отключения <span class="paragraph_1">(например,
+                        "click.myProxyNamespace")</span>, вместо указания прокси-функции во время отключения.
+                </li>
+
+            </div>
+
+            <div class="exmpl">
+                <button>Показать имя</button>
+                <button>Показать возраст</button>
+                <p></p>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="footer">
+        Footer
+    </div>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/functions.js"></script>
+</body>
+
+
+
+</html>

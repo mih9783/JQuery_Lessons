@@ -49,10 +49,6 @@ h3 {
     padding-bottom: 3rem;
 }
 
-#demo {
-    padding: 1rem;
-}
-
 .mylist {
     text-align: left;
     padding-left: 2rem;
@@ -69,12 +65,14 @@ h3 {
 }
 
 .paragraph_1 {
-    color: red;
+    color: blue;
+    font-weight: bold;
 }
 
 h2 {
     color: green;
     margin: 3rem;
+    font-size: 2.3rem;
 
 }
 
@@ -83,29 +81,6 @@ h2 {
     text-align: center;
     color: brown;
     margin: 2rem;
-}
-
-.div_1 {
-    height: 300px;
-    padding: 0;
-    box-sizing: border-box;
-    margin: 3rem;
-    border: 1px solid #000;
-}
-
-.blur {
-    padding: 2rem;
-    box-sizing: border-box;
-    margin: 3rem;
-    border: 1px solid #000;
-}
-
-.div_2 {
-    height: 450px;
-    padding: 0;
-    box-sizing: border-box;
-    margin: 3rem;
-    border: 1px solid #000;
 }
 
 .exmpl,
@@ -120,7 +95,7 @@ h2 {
     height: 18rem;
 }
 
-#exmpl2 {
+.exmpl2 {
     border: 2px solid rgb(112, 23, 23);
     padding: 3rem;
     margin: 3rem;
@@ -129,16 +104,11 @@ h2 {
     height: 25rem;
 }
 
-.sp_focus {
-    display: none;
-}
-
-.examples_para {
-    padding: 2rem;
-}
-
-.examples_para h2 {
+.subtitle {
+    font-size: 2rem;
     text-align: center;
+    color: brown;
+    margin: 2rem;
 }
 
 .examples_para .paragraph {
@@ -146,29 +116,6 @@ h2 {
     font-size: 1.6rem;
 
 }
-
-#target {
-    font-size: 1.4rem;
-    padding: 0.3rem 1rem;
-    border-radius: 0.5rem;
-    color: red;
-    margin: 2rem auto;
-    outline: none;
-    border-color: red;
-    cursor: pointer;
-    width: 800px;
-}
-
-.scroll {
-    overflow: scroll;
-    width: 300px;
-    height: 450px;
-    margin: 3rem auto;
-    border: 1px solid #000;
-}
-
-
-
 
 /* Footer */
 
@@ -185,3 +132,4 @@ h2 {
 #footer h3 {
     margin: 0;
 }
+
