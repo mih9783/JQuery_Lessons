@@ -69,6 +69,11 @@ h3 {
     font-weight: bold;
 }
 
+.paragraph_2 {
+    color: red;
+    font-weight: bold;
+}
+
 h2 {
     color: green;
     margin: 3rem;
@@ -82,26 +87,42 @@ h2 {
     color: brown;
     margin: 2rem;
 }
-
 .exmpl,
-.exmpl_1,
-.exmpl_3,
 .exmpl_4 {
     border: 2px solid rgb(112, 23, 23);
     padding: 3rem;
     margin: 3rem;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     color: rgb(226, 126, 126);
     height: 18rem;
 }
 
-.exmpl2 {
+.exmpl_1 {
     border: 2px solid rgb(112, 23, 23);
     padding: 3rem;
     margin: 3rem;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     color: rgb(226, 126, 126);
-    height: 25rem;
+    height: 26rem;
+} 
+
+
+.exmpl_2 {
+    border: 2px solid rgb(112, 23, 23);
+    padding: 3rem;
+    margin: 3rem;
+    font-size: 1.3rem;
+    color: rgb(226, 126, 126);
+    height: 40rem;
+}
+
+.exmpl_3 {
+    border: 2px solid rgb(112, 23, 23);
+    padding: 3rem;
+    margin: 3rem;
+    font-size: 1.3rem;
+    color: rgb(226, 126, 126);
+    height: 32rem;
 }
 
 .subtitle {
@@ -115,6 +136,24 @@ h2 {
     color: red;
     font-size: 1.6rem;
 
+}
+
+.div_one {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: rgb(255, 0, 200);
+    margin: 10px;
+    margin-bottom: 3rem;
+    transition: .7s;
+}
+
+.inp_trigger:focus {
+	border:3px solid green;
+}
+
+.inp_trigger_1:focus {
+	border:3px solid yellow;
 }
 
 /* Footer */
@@ -132,4 +171,3 @@ h2 {
 #footer h3 {
     margin: 0;
 }
-
