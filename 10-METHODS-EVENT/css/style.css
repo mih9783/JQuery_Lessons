@@ -74,6 +74,12 @@ h3 {
     font-weight: bold;
 }
 
+.paragraph_3 {
+    color: green;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
 h2 {
     color: green;
     margin: 3rem;
@@ -87,8 +93,7 @@ h2 {
     color: brown;
     margin: 2rem;
 }
-.exmpl,
-.exmpl_4 {
+.exmpl {
     border: 2px solid rgb(112, 23, 23);
     padding: 3rem;
     margin: 3rem;
@@ -123,6 +128,15 @@ h2 {
     font-size: 1.3rem;
     color: rgb(226, 126, 126);
     height: 32rem;
+}
+
+.exmpl_4 {
+    border: 2px solid rgb(112, 23, 23);
+    padding: 3rem;
+    margin: 3rem;
+    font-size: 1.3rem;
+    color: rgb(226, 126, 126);
+    height: 50rem;
 }
 
 .subtitle {
