@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сенсорные события</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div data-role="page" id="pageone" id="wrapper">
+        <div data-role="header" id="header">
+            <h2>Событие tap</h2>
+        </div>
+
+        <div data-role="content" class="main">
+
+            <div class="mylist">
+
+                <ul>
+                    <h2 class="subtitle">События Touch в JavaScript’е</h2>
+                    <li>
+                        <span class="paragraph">touchstart </span> — аналогично mousedown - нажатие клавиши мыши
+                    </li>
+
+                    <li>
+                        <span class="paragraph">touchend</span> — аналогично mouseup — отжатие клавиши мыши
+                    </li>
+
+                    <li>
+                        <span class="paragraph">touchmove</span> — аналогично mousemove — движение курсора
+                    </li>
+
+                    <li>
+                        <span class="paragraph">touchcancel</span> — аналогии нет
+                    </li>
+                </ul>
+            </div>
+
+            <h2>Примеры Касание jQuery Mobile</h2>
+            <h2>
+                Сенсорные события также работают на настольных компьютерах: коснитесь и потащите своей мышью!
+
+            </h2>
+
+            <h3 class="subtitle">
+                Касание jQuery Mobile
+            </h3>
+
+            <h3>
+                Событие касания инициируется, когда пользователь касается элемента.
+            </h3>
+
+            <h3>
+                Следующий пример говорит: Когда событие касания происходит на элементе p; скрыть текущий элемент p:
+            </h3>
+
+            <div class="content">
+                <p class="para_touch">Если Вы коснетесь меня, Я исчезну.</p>
+                <p class="para_touch">Коснитесь меня, чтобы я исчез!</p>
+                <p class="para_touch">Коснитесь меня тоже!</p>
+            </div>
+
+            <h3 class="subtitle">
+                Касание и Удерживание jQuery Mobile
+            </h3>
+
+            <h3>
+                Событие taphold инициируется, когда пользователь касается элемента и удерживает его в течение одной
+                секунды:
+            </h3>
+
+            <div class="content">
+                <p class="para_touch_1">Если Вы коснетесь меня, Я исчезну.</p>
+                <p class="para_touch_1">Коснитесь меня, чтобы я исчез!</p>
+                <p class="para_touch_1">Коснитесь меня тоже!</p>
+            </div>
+
+            <h3 class="subtitle">
+                Перетаскивание jQuery Mobile вниз вверх
+            </h3>
+
+            <h3>
+                Событие swipe инициируется, когда пользователь перетаскивает элемент горизонтально больше чем на 30px:
+            </h3>
+
+            <div class="content">
+                <p class="mypara">Перетащите этот текст или окно ниже.</p>
+                <!-- <p class="para_touch_2" style="border:1px solid black;height:100px;width:100px;"></p> -->
+                <p><span class="sp_1" style="color:red"></span></p>
+            </div>
+
+            <h3 class="subtitle">
+                Перетаскивание Влево jQuery Mobile
+            </h3>
+
+            <div class="content">
+                <p class="mypara_1">
+                    Перетащите меня в левом направлении
+                </p>
+                <p><span class="sp_2" style="color:red">
+                </span></p>
+            </div>
+
+            <h3 class="subtitle">
+                    Перетаскивание Вправо jQuery Mobile
+                </h3>
+
+            <div class="content">
+                    <p class="mypara_2">
+                        Перетащите меня в правом направлении
+                    </p>
+                    <p><span class="sp_3" style="color:red">
+                    </span></p>
+                </div>
+
+        </div>
+
+        <div data-role="footer" id="footer">
+            <h2>Текст Подвала</h2>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/functions.js"></script>
+</body>
+
+</html>

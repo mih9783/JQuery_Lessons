@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery Lessons</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div id="header" class="main" style="text-align: center;">
+
+            <h1>Header</h1>
+
+        </div>
+
+        <div id="content">
+            <h1>Основные события в JQUERY</h1>
+
+            <p>
+                <span class="paragraph"> Прежде чем приступить к прочтению данной статьи, стоит определиться, что из
+                    себя представляют события — для web-странички, событиями будут являться любые действия пользователя
+                    – это и ввод данных с клавиатуры, и передвижения мышки, и конечно же “клики” – всё это и есть
+                    события. К событиям можно еще отнести события создаваемые скриптами, т.н. триггеры.</span>
+            </p>
+
+            <div class="mylist">
+                <ul>
+                    <h2>Базовые события</h2>
+                    <p>
+                        Начнем с азов. jQuery работает практически со всеми событиями в JavaScript’е, приведу список
+                        функции
+                        с
+                        небольшими пояснениями:
+                    </p>
+
+                    <li> <span class="paragraph">change</span> — измение значения элемента (значение, при потери фокуса,
+                        элемента отличается от
+                        изначального, при
+                        получении фокуса) </li>
+                    <li>
+
+                        <span class="paragraph">click</span> — клик по элементу (порядок событий — mousedown, mouseup,
+                        click)
+                    </li>
+
+                    <li>
+                        <span class="paragraph">dblclick</span> — двойной клик по элементу
+                    </li>
+
+                    <li>
+                        <span class="paragraph">resize</span> — изменение размеров элементов
+                    </li>
+
+                    <li>
+                        <span class="paragraph">scroll</span> – скроллинг элемента
+                    </li>
+
+                    <li>
+                        <span class="paragraph">select</span> — выбор текста (актуален только для input[type=text] и
+                        textarea)
+                    </li>
+
+                    <li>
+                        <span class="paragraph">submit</span> — отправка
+                    </li>
+
+                    <li>
+                        <span class="paragraph">focus</span> — фокус на элементе – актуально для input[type=text], но в
+                        современных браузерах работает и с
+                        другими
+                        элементами
+                    </li>
+
+                    <li>
+                        <span class="paragraph">blur</span> — фокус ушел с элемента – актуально для input[type=text] —
+                        срабатывает при клике по другому
+                        элементу на
+                        странице или по событию клавиатуры (к примеру переключение по tab’у)
+                    </li>
+
+                    <li>
+                        <span class="paragraph">focusin</span> — фокус на элементе, данное событие срабатывает на предке
+                        элемента, для которого произошло
+                        событие
+                        focus
+                    </li>
+
+                    <li>
+                        <span class="paragraph">focusout</span> — фокус ушел с элемента, данное событие срабатывает на
+                        предке элемента, для которого
+                        произошло
+                        событие blur
+                    </li>
+
+                    <li>
+                        <span class="paragraph">keydown</span> — нажатие клавиши на клавиатуре
+                    </li>
+
+                    <li>
+                        <span class="paragraph">keypress</span> — нажатие клавиши на клавиатуре (порядок событий —
+                        keydown, keypress, keyup)
+                    </li>
+
+                    <li>
+                        <span class="paragraph">keyup</span> — отжатие клавиши на клавиатуре
+                    </li>
+
+                    <li>
+                        <span class="paragraph">load</span> — загрузка элемента (img)
+                    </li>
+
+                    <li>
+                        <span class="paragraph">unload</span> — выгрузка элемента (window)
+                    </li>
+
+                    <li>
+                        <span class="paragraph"> mousedown</span> — нажатие клавиши мыши
+                    </li>
+
+                    <li>
+                        <span class="paragraph">mouseup</span> — отжатие клавиши мыши
+                    </li>
+
+                    <li>
+                        <span class="paragraph">mousemove</span> — движение курсора
+                    </li>
+
+                    <li>
+                        <span class="paragraph">mouseenter</span> — наведение курсора на элемент, не срабатывает при
+                        переходе фокуса на дочерние элементы
+                    </li>
+
+                    <li>
+                        <span class="paragraph">mouseleave</span> — вывод курсора из элемента, не срабатывает при
+                        переходе фокуса на дочерние элементы
+                    </li>
+
+                    <li>
+                        <span class="paragraph">mouseover</span> — наведение курсора на элемент
+                    </li>
+
+                    <li>
+                        <span class="paragraph">mouseout</span> — вывод курсора из элемента
+                    </li>
+
+                </ul>
+            </div>
+            <div class="examples">
+                <div class="mylist">
+                    <ul>
+                        <h2 class="subtitle">События клавиатуры</h2>
+
+                        <li>
+                            <span class="paragraph">keydown</span> — нажатие клавиши на клавиатуре
+                        </li>
+
+                        <li>
+                            <span class="paragraph">keypress</span> — нажатие клавиши на клавиатуре (порядок событий —
+                            keydown, keypress, keyup)
+                        </li>
+
+                        <li>
+                            <span class="paragraph">keyup</span> — отжатие клавиши на клавиатуре
+                        </li>
+                    </ul>
+                </div>
+
+                <h2>Примеры событий клавиатуры</h2>
+
+                <div class="examples_para">
+
+                    <li>
+                        <span class="paragraph">keydown</span> — Привязывает JavaScript обработчик событий "keydown"
+                        (нажатие на любую клавишу клавиатуры), или запускает это событие на выбранный элемент.
+                    </li>
+
+                </div>
+
+                <p>
+                    Обращаю Ваше внимание, что метод .keydown(), используемый вместе с функцией, переданной в качестве
+                    параметра (handler) является, короткой записью метода .on(), а без параметра является короткой
+                    записью метода .trigger():
+                </p>
+                <p>
+                    Событие keydown отправляется элементу, когда пользователь нажимает клавишу на клавиатуре. Если
+                    клавиша удерживается нажатой, то событие вызывается многократно. Это событие может быть прикреплено
+                    к любому элементу, но сработает только на тех элементах, которые имеют фокус. Список элементов,
+                    которые могут получить фокус, варьируются в зависимости от браузера, поэтому надежнее всего будет
+                    привязать это событие к элементам формы, так как они всегда могут получить фокус.
+                </p>
+
+
+
+                <form>
+                    <input id="target" type="text" value="поставь фокус и нажми любую клавишу метод .keydown()">
+                </form>
+                <div class="exmpl">
+                    Вызвать обработчик
+                </div>
+
+                <div class="examples_para">
+                    <li>
+                        <span class="paragraph">keypress</span> — Привязывает JavaScript обработчик событий "keypress"
+                        (нажатие на любую клавишу клавиатуры кроме специальных - Alt, Ctrl, Shift, Esc, PrScr и тому
+                        подобные), или запускает это событие на выбранный элемент.
+                    </li>
+                </div>
+
+                <button class="btn_1">Клик</button>
+                <div class="exmpl_1">Элемент div</div>
+
+                <div class="examples_para">
+                    <li>
+                        <span class="paragraph">keyup</span> — Привязывает JavaScript обработчик событий "keyup"
+                        (нажатая клавиша была отпущена), или запускает это событие на выбранный элемент.
+                    </li>
+                </div>
+
+                <button class="btn_2">Клик</button>
+                <div class="exmpl_2">Элемент div</div>
+
+                <div class="mylist">
+
+                    <ul>
+                        <h2 class="subtitle">События мыши</h2>
+                        <li>
+                            <span class="paragraph"> mousedown</span> — нажатие клавиши мыши
+                        </li>
+
+                        <li>
+                            <span class="paragraph">mouseup</span> — отжатие клавиши мыши
+                        </li>
+
+                        <li>
+                            <span class="paragraph">mousemove</span> — движение курсора
+                        </li>
+
+                        <li>
+                            <span class="paragraph">mouseenter</span> — наведение курсора на элемент, не срабатывает при
+                            переходе фокуса на дочерние элементы
+                        </li>
+
+                        <li>
+                            <span class="paragraph">mouseleave</span> — вывод курсора из элемента, не срабатывает при
+                            переходе фокуса на дочерние элементы
+                        </li>
+
+                        <li>
+                            <span class="paragraph">mouseover</span> — наведение курсора на элемент
+                        </li>
+
+                        <li>
+                            <span class="paragraph">mouseout</span> — вывод курсора из элемента
+                        </li>
+
+                    </ul>
+                </div>
+
+                <h2>Примеры событий мыши</h2>
+
+                <div class="examples_para">
+                    <li>
+                        <span class="paragraph">click</span> — Привязывает JavaScript обработчик событий "click" (клик
+                        левой кнопкой мыши), или запускает это событие на выбранный элемент
+                    </li>
+                </div>
+
+                <button class="btn_3">Клик</button>
+                <div class="div_1">
+                    <div class="exmpl_3">click</div>
+                </div>
+
+                <div class="examples_para">
+                    <li>
+                        <span class="paragraph">hover</span> — Связывает один или два обработчика событий для элемента,
+                        которые будут выполнены, когда указатель мыши находится на элементе и при его отведении.
+                    </li>
+                </div>
+
+                <div class="exmpl_4">click</div>
+
+                <div class="mylist">
+                    <ul>
+                        <h2 class="subtitle">События браузера</h2>
+
+                        <li>
+                            <span class="paragraph">resize</span> — изменение размеров элементов
+                        </li>
+
+                        <li>
+                            <span class="paragraph">scroll</span> – скроллинг элемента
+                        </li>
+                    </ul>
+                </div>
+
+                <h2>Примеры событий браузера</h2>
+
+                <div class="examples_para">
+                    <li>
+                        <span class="paragraph">resize</span> — Привязывает JavaScript обработчик событий "resize"
+                        (срабатывает при изменении размеров окна браузера), или запускает это событие на выбранный
+                        элемент.
+                    </li>
+                </div>
+
+                <button class="btn_4">Клик resize</button>
+                <p class="resize"></p>
+
+                <div class="examples_para">
+                    <li>
+                        <span class="paragraph">scroll</span> — Привязывает JavaScript обработчик событий "scroll"
+                        (срабатывает при прокрутке элементов), или запускает это событие на выбранный элемент.
+                    </li>
+                </div>
+
+                <button class="btn_5">Клик scroll</button><span class="browser"></span><br><br>
+                <div class="scroll">
+                    Ромашка — род многолетних цветковых растений семейства Астровые, или Сложноцветные (Asteraceae),
+                    объединяет около двадцати видов невысоких пахучих трав, цветущих в первый год жизни. Наиболее
+                    известный вид — Ромашка аптечная (Matricaria chamomilla, syn. Matricaria recutita), это растение
+                    широко используется в лечебных и косметических целях.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae doloremque eos eaque alias amet
+                    reiciendis, temporibus possimus nam incidunt ea reprehenderit rem? Unde soluta obcaecati officia
+                    iste nobis a quae veniam accusantium iure explicabo consequatur corrupti iusto nostrum, ipsa, quis
+                    assumenda non. Illum voluptates deserunt, exercitationem unde soluta quidem quae.
+                </div>
+
+                
+
+               
+                   
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+    <div id="footer">
+        <h3>Footer</h3>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/functions.js"></script>
+</body>
+
+
+
+</html>
